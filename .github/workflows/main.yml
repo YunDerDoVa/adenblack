@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-16.04
 
     steps:
+      uses: actions/adenblack_django@master
     - name: Run a multi-lines script
       run: |
         pwd
