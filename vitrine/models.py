@@ -35,6 +35,9 @@ class Movie(Video):
         related_query_name='camera_operators',
     )
 
+    def get_embed_url(self):
+        return 'https://www.youtube.com/embed/' + self.video_url.split('v=')[1].split('=')[0]
+
     def __str__(self):
         return self.name
 
