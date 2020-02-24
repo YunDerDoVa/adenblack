@@ -10,4 +10,4 @@ jobs:
     steps:
     - name: Run a multi-lines script
       run: |
-        python manage.py migrate
+        python /manage.py migrate
