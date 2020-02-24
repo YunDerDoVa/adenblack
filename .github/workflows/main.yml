@@ -11,4 +11,5 @@ jobs:
     - name: Run a multi-lines script
       run: |
         pwd
+        ls -la
         python ./manage.py migrate
