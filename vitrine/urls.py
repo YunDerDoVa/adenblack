@@ -3,6 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('sqlite/', views.get_sql, name='get_sql'),
+    
     path('', views.home, name='home'),
     path('vfx/', views.vfx, name='vfx'),
     path('vfx/mapping', views.art_mapping, name='art_mapping'),

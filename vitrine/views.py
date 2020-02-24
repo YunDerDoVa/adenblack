@@ -1,8 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse
 
 from datetime import date
 from .models import Movie, ArtMapping, ArtCompositing, Person
+
+def get_sql(request):
+    return redirect('/media/db.sqlite3')
+
 
 def home(request):
 

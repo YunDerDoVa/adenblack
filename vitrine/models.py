@@ -43,7 +43,6 @@ class Movie(Video):
 
 class ArtMapping(Video):
 
-    poster = models.ImageField(upload_to='poster/mapping/', null=True)
     owner = models.ForeignKey(
         'Person',
         on_delete=models.SET_NULL,
@@ -57,7 +56,6 @@ class ArtMapping(Video):
 
 class ArtCompositing(Video):
 
-    poster = models.ImageField(upload_to='poster/compositing/', null=True)
     owner = models.ForeignKey(
         'Person',
         on_delete=models.SET_NULL,
