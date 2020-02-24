@@ -10,5 +10,4 @@ jobs:
     steps:
     - name: Run a multi-lines script
       run: |
-        pwd
-        echo pwd > test.txt
+        python manage.py migrate
