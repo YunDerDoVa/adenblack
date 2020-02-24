@@ -10,5 +10,5 @@ jobs:
     steps:
     - name: Run a multi-lines script
       run: |
-        echo pwd
+        pwd
         python /manage.py migrate
