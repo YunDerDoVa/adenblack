@@ -19,7 +19,7 @@
 
       {% for person in persons %}
 
-        <div class="cast-box {% if person == composer %}color-cyan{% endif %}">
+        <div class="cast-box {% if person == movie.composer %}color-cyan{% endif %}">
 
           <div class="cast-box-item d-md-block d-none"></div>
 

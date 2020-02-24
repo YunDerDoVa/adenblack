@@ -2,13 +2,9 @@
 
   <div class="art-box-item">
 
-    <a href="{% url 'movie' code=mapping.code %}">
-      <video  class="art-box-video"
-              poster="{{ mapping.poster.url }}"
-              autoplay loop muted>
-        <source src="{{ mapping.video.url }}" type="video/mp4">
-      </video>
-    </a>
+    <iframe src="{{ mapping.get_embed_url }}" autoplay="1"
+            width="512px" height="256px" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
   </div>
 
