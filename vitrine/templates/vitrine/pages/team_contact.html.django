@@ -1,0 +1,48 @@
+{% extends 'vitrine/bases/plug_title_base.html.django' %}
+
+{% block plug_box_bottom %}
+
+  <div class="aden-box aden-box-contact">
+
+    {% for person in persons %}
+
+      <div class="person-box d-flex flex-md-row flex-column">
+
+        <div class="person-box-item">
+          <p class="person-job">{{ person.job }}</p>
+        </div>
+
+        <div class="person-box-item">
+          <p>
+            {{ person.firstname }} {{ person.lastname }}
+
+            {% if person.insta %}
+              <a class="person-box-link" href="{{ person.insta }}">
+                <i class="fab fa-instagram"></i>
+                {{ person.pseudo }}
+              </a>
+            {% endif %}
+          </p>
+        </div>
+
+        <div class="person-box-item"></div>
+
+      </div>
+
+    {% endfor %}
+
+    <div class="movie-box">
+
+      <h3 class="movie-box-title text-uppercase">Movie</h3>
+
+      <div class="movie-box-list">
+        {% for movie in movies %}
+          <a class="movie-box-list-item text-uppercase" href="{% url 'movie_details' code=movie.code %}">{{ movie.name }}</a>
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

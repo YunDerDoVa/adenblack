@@ -1,0 +1,11 @@
+{% extends 'vitrine/bases/plug_title_base.html.django' %}
+
+{% block plug_box_bottom %}
+
+  <div class="aden-box">
+
+    <a href="https://www.movavi.com/fr/logiciel-capture-ecran-video-mac/">>>Vic<<</a>
+
+  </div>
+
+{% endblock plug_box_bottom %}

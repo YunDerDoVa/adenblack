@@ -1,0 +1,12 @@
+{% load static %}
+
+<!-- Navbar -->
+<nav class="myNavbar d-flex justify-content-center align-items-center">
+
+  <!-- large/medium screens -->
+  <video class="aden-title" autoplay loop muted>
+    <source src="{% static 'plug/aden_intro.mp4' %}" type="video/mp4">
+    ADEN BLACK PRODUCTION
+  </video>
+
+</nav>

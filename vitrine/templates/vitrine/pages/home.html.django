@@ -1,0 +1,13 @@
+{% extends 'vitrine/bases/plug_title_base.html.django' %}
+
+{% block btn_return %}{% endblock btn_return %}
+
+{% block plug_box_bottom %}
+
+  <a class="plug-box-nav" href="{% url 'movie' code=mad_mirror %}">MOVIE</a>
+  <a class="plug-box-nav" href="{% url 'vfx' %}">VFX</a>
+  <a class="plug-box-nav" href="{% url 'courses' %}">COURSES</a>
+  <a class="plug-box-nav" href="{% url 'participate_futur_project' %}">PARTICIPATE FUTUR PROJECT</a>
+  <a class="plug-box-nav" href="{% url 'team_contact' %}">TEAM CONTACT</a>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html.django' %}
+
+{% block body %}
+
+  {% include "vitrine/components/btn_return.html.django" %}
+
+  <div class="aden-box aden-box-art">
+
+    {% for mapping in mappings %}
+
+      {% include "vitrine/components/art_mapping_box_with_casting.html.django" %}
+
+    {% endfor %}
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'vitrine/bases/plug_title_base.html.django' %}
+
+{% block plug_box_bottom %}
+
+  <div class="aden-box">
+
+    <p>Futur project is being thought.</p>
+    <p>An open call to the technicians of cinema and actors is coming!</p>
+    <p>Stay connected.</p>
+
+  </div>
+
+{% endblock plug_box_bottom %}

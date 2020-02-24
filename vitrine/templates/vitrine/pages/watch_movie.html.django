@@ -1,0 +1,11 @@
+{% extends 'base.html.django' %}
+
+{% block title %}{{ movie.name }}{% endblock %}
+
+{% block body %}
+
+  {% include "vitrine/components/btn_return.html.django" %}
+
+  {% include "vitrine/components/fullscreen_window.html.django" %}
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.django' %}
+
+{% load static %}
+
+{% block body %}
+
+  {% include "vitrine/components/btn_return.html.django" %}
+
+  <div class="aden-background-box">
+    <div class="d-block">
+      <video class="aden-background-plug" src="{% static 'plug/flash_light.mp4' %}" autoplay loop muted>
+      </video>
+    </div>
+  </div>
+
+  <div class="aden-box aden-box-vfx d-flex flex-md-row flex-column justify-content-center align-items-center">
+
+    <a class="d-md-block d-none aden-box-vfx-link right" href="{% url 'art_mapping' %}">ART MAPPING</a>
+    <a class="d-block d-md-none aden-box-vfx-link" href="{% url 'art_mapping' %}">ART MAPPING</a>
+    <div class="aden-box-vfx-space"></div>
+    <a class="d-md-block d-none aden-box-vfx-link left" href="{% url 'art_compositing' %}">ART COMPOSITING</a>
+    <a class="d-block d-md-none aden-box-vfx-link" href="{% url 'art_compositing' %}">ART COMPOSITING</a>
+
+  </div>
+
+{% endblock body %}

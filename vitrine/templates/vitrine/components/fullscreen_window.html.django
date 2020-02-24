@@ -1,0 +1,6 @@
+{% load static %}
+
+<video id="myVideo" class="aden-movie-fullscreen" controls autoplay>
+  <source src="{{ movie.video.url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

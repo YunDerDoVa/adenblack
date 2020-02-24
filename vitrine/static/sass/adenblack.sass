@@ -1,0 +1,306 @@
+$black: #000
+$white: #fff
+
+$semiBlack: #333
+$semiWhite: #ccc
+
+$blackWindow: rgba(0, 0, 0, 0.42)
+
+$adenBlue: #0077ff
+$adenIndigo: #5500e2
+$adenRose: #c71585
+$adenGreen: #0f0
+$adenYellow: #ff0
+$adenLightYellow: #ffff99
+$adenIndigoWindow: rgba(33, 0, 89, 0.42)
+
+$generalFontFamily: 'Roboto'
+
+body
+  background-color: $black
+
+/*General*/
+.content-body
+  min-height: 100vh
+  width: 100%
+  background-color: $black
+
+  overflow: hidden
+
+  font-family: $generalFontFamily
+
+  & a
+    transition: 0.42s
+
+    &:hover
+      text-decoration: inherit
+      transition: 0.42s
+
+
+/*Footer*/
+.aden-footer
+  position: relative
+  z-index: 2
+  padding: 12px 0
+  border-radius: 12px 12px 0 0
+  background-color: $adenIndigoWindow
+  color: $white
+
+  & a
+    color: $white
+    transition: 0.42s
+
+    &:hover
+      color: $adenIndigo
+      transition: 0.42s
+
+
+/*Plug Title*/
+.plug
+  &-container
+    min-height: 100vh
+    overflow: hidden
+
+  &-box
+    overflow: visible
+    color: $semiWhite
+
+    &-top
+      z-index: 1
+      width: 100%
+      max-height: 50vh
+
+      &-video
+        width: 100%
+
+    &-bottom
+      z-index: 2
+      margin: 24px 0
+      padding: 12px 0
+      background-color: $blackWindow
+      border-radius: 9px
+      box-shadow: 0 0 11px black
+
+    &-nav
+      padding: 0 24px
+      font-size: 1.42em
+      font-weight: 500
+      color: $semiWhite
+      text-align: center
+
+      &:hover
+        color: $adenIndigo
+        text-decoration: none
+
+
+/*Aden Components*/
+.aden
+
+  /*Aden Background Plug*/
+  &-background
+
+    &-box
+      z-index: 0
+      width: 100%
+      height: 100%
+      position: fixed
+      bottom: 0
+      right: 0
+      display: flex
+      justify-content: center
+      align-items: center
+
+    &-plug
+      min-width: 100vw
+      min-height: 100vh
+
+  /*Aden Btn*/
+  &-btn
+
+    /*Btn Return*/
+    &-return
+      position: fixed
+      top: 5%
+      left: 5%
+      font-size: 1.5em
+      z-index: 9
+
+      color: $white
+      &:hover
+        color: $adenIndigo
+
+    /*Color & HoveredColor*/
+    &-rose-white
+      color: $adenRose
+      &:hover
+        color: $white
+
+    &-white-indigo
+      color: $white
+      &:hover
+        color: $adenIndigo
+
+    &-cyan-green
+      color: cyan
+      &:hover
+        color: $adenGreen
+
+    &-gold-rose
+      color: gold
+      &:hover
+        color: $adenRose
+
+    &-cyan-gold
+      color: cyan
+      &:hover
+        color: gold
+
+    /*Opacity*/
+    &-opacity
+      &-small-full
+        opacity: 0.24
+        &:hover
+          opacity: 1
+
+  /*Aden Box*/
+  &-box
+    padding: 12px
+
+
+    /*Box Contact*/
+    &-contact
+      width: 100vw
+      padding: 0 10%
+
+      /*Person Box*/
+      & .person-box
+        margin: 0 10% 12px
+
+        &-item
+          width: 100%
+          min-height: 1em
+
+        &-link
+          margin-left: 24px
+          color: $semiWhite
+          &:hover
+            color: $adenIndigo
+            text-decoration: none
+
+      /*Movie Box*/
+      & .movie-box
+        margin: 0 10%
+
+        &-title
+          font-size: 1.2em
+          font-weight: 500
+          margin: 24px 0
+
+        &-list
+          font-size: 1.2em
+
+          &-item
+            color: $adenYellow
+            &:hover
+              color: $adenIndigo
+
+              text-decoration: none
+
+
+    /*Box Movie Cast*/
+    &-movie
+      width: 100vw
+
+      /*Cast Box*/
+      & .cast-box
+        margin: 0 24px 24px
+        display: flex
+
+        color: $adenLightYellow
+
+        &-item
+          width: 100%
+
+        &-link
+          margin-left: 24px
+          color: $adenBlue
+          &:hover
+            color: $adenIndigo
+            text-decoration: none
+
+
+    /*Box Art*/
+    &-art
+      width: 100%
+      padding: 0 18%
+
+      & .art-box
+        margin: 24px 0
+        width: 100%
+
+        &-item
+          width: 100%
+
+        &-video
+          width: 100%
+          height: 100%
+
+        &-link
+          color: gold
+          margin-bottom: 12px
+          &:hover
+            color: $adenIndigo
+            text-decoration: none
+
+
+    /*VFX*/
+    &-vfx
+      position: fixed
+      top: 0
+      left: 0
+      z-index: 1
+      width: 100%
+      height: 100vh
+
+      &-link
+        width: 256px
+        margin: 0 128px
+        font-size: 24px
+        text-align: center
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.21)
+        color: $adenRose
+        &:hover
+          color: $white
+
+        &.right
+          text-align: right
+        &.left
+          text-align: left
+
+      &-space
+        width: 256px
+        height: 256px
+
+  /*Aden Movie Fullscreen*/
+  &-movie-fullscreen
+    display: block
+    width: 100vw
+    height: 100vh
+
+/*Colors*/
+.color-cyan
+  color: cyan !important
+
+
+/*Rain*/
+.rain
+  &-animation
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 1
+
+  &-audio
+    display: none

@@ -1,0 +1,228 @@
+body {
+  background-color: #000; }
+
+/*General */
+.content-body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+  font-family: "Roboto"; }
+  .content-body a {
+    transition: 0.42s; }
+    .content-body a:hover {
+      text-decoration: inherit;
+      transition: 0.42s; }
+
+/*Footer */
+.aden-footer {
+  position: relative;
+  z-index: 2;
+  padding: 12px 0;
+  border-radius: 12px 12px 0 0;
+  background-color: rgba(33, 0, 89, 0.42);
+  color: #fff; }
+  .aden-footer a {
+    color: #fff;
+    transition: 0.42s; }
+    .aden-footer a:hover {
+      color: #5500e2;
+      transition: 0.42s; }
+
+/*Plug Title */
+.plug-container {
+  min-height: 100vh;
+  overflow: hidden; }
+.plug-box {
+  overflow: visible;
+  color: #ccc; }
+  .plug-box-top {
+    z-index: 1;
+    width: 100%;
+    max-height: 50vh; }
+    .plug-box-top-video {
+      width: 100%; }
+  .plug-box-bottom {
+    z-index: 2;
+    margin: 24px 0;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.42);
+    border-radius: 9px;
+    box-shadow: 0 0 11px black; }
+  .plug-box-nav {
+    padding: 0 24px;
+    font-size: 1.42em;
+    font-weight: 500;
+    color: #ccc;
+    text-align: center; }
+    .plug-box-nav:hover {
+      color: #5500e2;
+      text-decoration: none; }
+
+/*Aden Components */
+.aden {
+  /*Aden Background Plug */
+  /*Aden Btn */
+  /*Aden Box */
+  /*Aden Movie Fullscreen */ }
+  .aden-background-box {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .aden-background-plug {
+    min-width: 100vw;
+    min-height: 100vh; }
+  .aden-btn {
+    /*Btn Return */
+    /*Color & HoveredColor */
+    /*Opacity */ }
+    .aden-btn-return {
+      position: fixed;
+      top: 5%;
+      left: 5%;
+      font-size: 1.5em;
+      z-index: 9;
+      color: #fff; }
+      .aden-btn-return:hover {
+        color: #5500e2; }
+    .aden-btn-rose-white {
+      color: #c71585; }
+      .aden-btn-rose-white:hover {
+        color: #fff; }
+    .aden-btn-white-indigo {
+      color: #fff; }
+      .aden-btn-white-indigo:hover {
+        color: #5500e2; }
+    .aden-btn-cyan-green {
+      color: cyan; }
+      .aden-btn-cyan-green:hover {
+        color: #0f0; }
+    .aden-btn-gold-rose {
+      color: gold; }
+      .aden-btn-gold-rose:hover {
+        color: #c71585; }
+    .aden-btn-cyan-gold {
+      color: cyan; }
+      .aden-btn-cyan-gold:hover {
+        color: gold; }
+    .aden-btn-opacity-small-full {
+      opacity: 0.24; }
+      .aden-btn-opacity-small-full:hover {
+        opacity: 1; }
+  .aden-box {
+    padding: 12px;
+    /*Box Contact */
+    /*Box Movie Cast */
+    /*Box Art */
+    /*VFX */ }
+    .aden-box-contact {
+      width: 100vw;
+      padding: 0 10%;
+      /*Person Box */
+      /*Movie Box */ }
+      .aden-box-contact .person-box {
+        margin: 0 10% 12px; }
+        .aden-box-contact .person-box-item {
+          width: 100%;
+          min-height: 1em; }
+        .aden-box-contact .person-box-link {
+          margin-left: 24px;
+          color: #ccc; }
+          .aden-box-contact .person-box-link:hover {
+            color: #5500e2;
+            text-decoration: none; }
+      .aden-box-contact .movie-box {
+        margin: 0 10%; }
+        .aden-box-contact .movie-box-title {
+          font-size: 1.2em;
+          font-weight: 500;
+          margin: 24px 0; }
+        .aden-box-contact .movie-box-list {
+          font-size: 1.2em; }
+          .aden-box-contact .movie-box-list-item {
+            color: #ff0; }
+            .aden-box-contact .movie-box-list-item:hover {
+              color: #5500e2;
+              text-decoration: none; }
+    .aden-box-movie {
+      width: 100vw;
+      /*Cast Box */ }
+      .aden-box-movie .cast-box {
+        margin: 0 24px 24px;
+        display: flex;
+        color: #ffff99; }
+        .aden-box-movie .cast-box-item {
+          width: 100%; }
+        .aden-box-movie .cast-box-link {
+          margin-left: 24px;
+          color: #0077ff; }
+          .aden-box-movie .cast-box-link:hover {
+            color: #5500e2;
+            text-decoration: none; }
+    .aden-box-art {
+      width: 100%;
+      padding: 0 18%; }
+      .aden-box-art .art-box {
+        margin: 24px 0;
+        width: 100%; }
+        .aden-box-art .art-box-item {
+          width: 100%; }
+        .aden-box-art .art-box-video {
+          width: 100%;
+          height: 100%; }
+        .aden-box-art .art-box-link {
+          color: gold;
+          margin-bottom: 12px; }
+          .aden-box-art .art-box-link:hover {
+            color: #5500e2;
+            text-decoration: none; }
+    .aden-box-vfx {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100vh; }
+      .aden-box-vfx-link {
+        width: 256px;
+        margin: 0 128px;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.21);
+        color: #c71585; }
+        .aden-box-vfx-link:hover {
+          color: #fff; }
+        .aden-box-vfx-link.right {
+          text-align: right; }
+        .aden-box-vfx-link.left {
+          text-align: left; }
+      .aden-box-vfx-space {
+        width: 256px;
+        height: 256px; }
+  .aden-movie-fullscreen {
+    display: block;
+    width: 100vw;
+    height: 100vh; }
+
+/*Colors */
+.color-cyan {
+  color: cyan !important; }
+
+/*Rain */
+.rain-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; }
+.rain-audio {
+  display: none; }
+
+/*# sourceMappingURL=adenblack.css.map */

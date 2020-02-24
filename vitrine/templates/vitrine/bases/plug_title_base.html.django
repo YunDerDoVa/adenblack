@@ -1,0 +1,27 @@
+{% extends 'base.html.django' %}
+
+{% load static %}
+
+{% block body %}
+
+  {% block btn_return %}
+    {% include "vitrine/components/btn_return.html.django" %}
+  {% endblock btn_return %}
+
+  <div class="plug-container d-flex flex-column justify-content-center align-items-center">
+
+    <div class="plug-box plug-box-top d-flex justify-content-center align-items-center">
+      <video class="plug-box-top-video" src="{% static plug_video_url %}" autoplay loop muted></video>
+    </div>
+
+    <div class="plug-box plug-box-bottom">
+      <div class="container d-flex flex-md-row flex-column justify-content-between align-items-center">
+        {% block plug_box_bottom %}{% endblock plug_box_bottom %}
+      </div>
+    </div>
+
+  </div>
+
+  {% block body_footer %}{% endblock body_footer %}
+
+{% endblock body %}

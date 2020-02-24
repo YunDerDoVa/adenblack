@@ -1,0 +1,37 @@
+<div class="art-box d-flex flex-md-row flex-column">
+
+  <div class="art-box-item">
+
+    <a href="{% url 'movie' code=mapping.code %}">
+      <video  class="art-box-video"
+              poster="{{ mapping.poster.url }}"
+              autoplay loop muted>
+        <source src="{{ mapping.video.url }}" type="video/mp4">
+      </video>
+    </a>
+
+  </div>
+
+  <div class="art-box-item d-flex flex-column justify-content-center align-items-center">
+
+    {% if mapping.owner.insta %}
+      <a class="art-box-link" href="{{ mapping.owner.insta }}">
+        <strong>Art Mapping : </strong><i class="fab fa-instagram"></i> {{ mapping.owner.pseudo }}
+      </a>
+    {% endif %}
+
+    {% for person in mapping.casting.all %}
+
+      {% if person != mapping.owner %}
+        {% if person.soundcloud %}
+          <a class="art-box-link" href="{{ person.soundcloud }}">
+            <i class="fab fa-soundcloud"></i> {{ person.pseudo }}
+          </a>
+        {% endif %}
+      {% endif %}
+
+    {% endfor %}
+
+  </div>
+
+</div>

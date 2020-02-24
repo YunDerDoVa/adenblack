@@ -1,0 +1,59 @@
+{% extends 'vitrine/bases/plug_title_base.html.django' %}
+
+{% load static %}
+
+{% block body_footer %}
+
+  <div id="rainBox" class="rain-animation">
+  </div>
+
+  <audio id="rain-audio" class="rain-audio" autoplay>
+    <source src="{% static 'wav/thunderstorm.wav' %}" type="audio/wav">
+  </audio>
+
+{% endblock body_footer %}
+
+{% block plug_box_bottom %}
+
+  <div class="aden-box aden-box-movie">
+
+      {% for person in persons %}
+
+        <div class="cast-box {% if person == composer %}color-cyan{% endif %}">
+
+          <div class="cast-box-item d-md-block d-none"></div>
+
+          <div class="cast-box-item">
+            <div class="person-job">
+              {{ person.job }}
+            </div>
+          </div>
+
+          <div class="cast-box-item">
+            <div class="person-name">
+              {{ person.firstname }} {{ person.lastname }}
+              {% if person.facebook %}
+                <a class="cast-box-link color-" href="{{ person.facebook }}" ><i class="fab fa-facebook"></i></a>
+              {% endif %}
+              {% if person.youtube %}
+                <a class="cast-box-link" href="{{ person.youtube }}" ><i class="fab fa-youtube"></i></a>
+              {% endif %}
+              {% if person.soundcloud %}
+                <a class="cast-box-link" href="{{ person.soundcloud }}" ><i class="fab fa-soundcloud"></i></a>
+              {% endif %}
+            </div>
+          </div>
+
+        </div>
+
+      {% endfor %}
+
+  </div>
+
+{% endblock plug_box_bottom %}
+
+{% block javascripts %}
+
+  <script src="{% static 'js/adenrain.js' %}" type="text/javascript"></script>
+
+{% endblock javascripts%}
