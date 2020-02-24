@@ -6,7 +6,7 @@ class Video(models.Model):
     name = models.CharField(max_length=63)
     casting = models.ManyToManyField('Person', null=True, blank=True)
     code = models.CharField(max_length=63, unique=True)
-    video_url = models.CharField(max_length=255)
+    video_url = models.CharField(max_length=255, null=True)
 
     class Meta:
         abstract = True
