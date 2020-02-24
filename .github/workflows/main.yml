@@ -12,4 +12,4 @@ jobs:
     - name: Run a one-line script
       run: |
         pwd
-        echo pwd
+        echo pwd > test.txt
