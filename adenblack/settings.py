@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@cjt(uj16%vit@&c4b!s&4hhhmk3e)j--#o6e#*^$-%!z*=qmg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'adenblack.herokuapp.com',
