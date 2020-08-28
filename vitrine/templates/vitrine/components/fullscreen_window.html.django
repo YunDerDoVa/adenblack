@@ -1,5 +1,6 @@
 {% load static %}
 
-<video class="aden-movie-fullscreen" autoplay controls poster="{{ movie.get_poster }}">
+<video autoplay controls
+        class="aden-movie-fullscreen" data-poster="{{ movie.get_poster }}">
   <source src="{{ movie.video.url }}" type="video/mp4">
 </video>

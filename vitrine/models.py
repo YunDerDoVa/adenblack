@@ -12,6 +12,12 @@ class Video(models.Model):
     class Meta:
         abstract = True
 
+    def get_poster_url(self):
+        if self.poster:
+            return self.poster.url
+        else:
+            return None
+
 class Movie(Video):
 
     director = models.ForeignKey(
