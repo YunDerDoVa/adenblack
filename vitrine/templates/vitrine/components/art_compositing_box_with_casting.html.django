@@ -2,9 +2,9 @@
 
   <div class="art-box-item">
 
-    <iframe src="{{ mapping.get_embed_url }}" autoplay="1"
-            class="art-box-video" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <video width="100%" height="100%" autoplay controls poster="{{ mocie.poster.url }}">
+      <source src="{{ mapping.url }}" type="video/mp4">
+    </video>
 
   </div>
 

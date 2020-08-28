@@ -1,4 +1,5 @@
 {% load static %}
 
-<iframe id="myVideo" class="aden-movie-fullscreen"
-        src="{{ movie.get_embed_url }}" width="100%" height="100%"></iframe>
+<video width="100%" height="100%" autoplay controls poster="{{ mocie.poster.url }}">
+  <source src="{{ video.url }}" type="video/mp4">
+</video>

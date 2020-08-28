@@ -10,10 +10,12 @@ def get_sql(request):
 
 def home(request):
 
+    mad_mirror = Movie.objects.get(code='mad_mirror')
+
     context = {
         'today': date.today(),
         'plug_video_url': 'plug/aden_intro.mp4',
-        'mad_mirror': 'mad_mirror',
+        'movie': mad_mirror,
     }
 
     return render(request, 'vitrine/pages/home.html.django', context)

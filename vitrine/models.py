@@ -4,19 +4,13 @@ from django.db import models
 class Video(models.Model):
 
     name = models.CharField(max_length=63)
-    casting = models.ManyToManyField('Person', null=True, blank=True)
+    casting = models.ManyToManyField('Person', blank=True)
     code = models.CharField(max_length=63, unique=True)
-    video_url = models.CharField(max_length=255, null=True)
+    video = models.FileField(upload_to='videos/', null=True)
+    poster = models.ImageField(upload_to='video/posters/', null=True, blank=True)
 
     class Meta:
         abstract = True
-
-    def get_embed_url(self):
-        return (
-            'https://www.youtube.com/embed/'
-            + self.video_url.split('v=')[1].split('=')[0]
-            + '?controls=0'
-        )
 
 class Movie(Video):
 
