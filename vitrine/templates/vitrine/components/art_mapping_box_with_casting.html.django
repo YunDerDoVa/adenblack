@@ -2,8 +2,8 @@
 
   <div class="art-box-item">
 
-    <video width="100%" height="100%" autoplay controls poster="{{ mocie.poster.url }}">
-      <source src="{{ mapping.url }}" type="video/mp4">
+    <video width="100%" height="100%" autoplay controls poster="{{ mapping.get_poster_url }}">
+      <source src="{{ mapping.video.url }}" type="video/mp4">
     </video>
 
   </div>

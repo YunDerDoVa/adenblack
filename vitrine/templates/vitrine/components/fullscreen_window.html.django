@@ -1,5 +1,5 @@
 {% load static %}
 
-<video width="100%" height="100%" autoplay controls poster="{{ mocie.poster.url }}">
-  <source src="{{ video.url }}" type="video/mp4">
+<video class="aden-movie-fullscreen" autoplay controls poster="{{ movie.get_poster }}">
+  <source src="{{ movie.video.url }}" type="video/mp4">
 </video>
