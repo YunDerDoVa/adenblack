@@ -6,7 +6,7 @@ class Video(models.Model):
     name = models.CharField(max_length=63)
     casting = models.ManyToManyField('Person', blank=True)
     code = models.CharField(max_length=63, unique=True)
-    video = models.FileField(upload_to='videos/', null=True)
+    video = models.FileField(upload_to='videos/', null=True, blank=True)
     poster = models.ImageField(upload_to='video/posters/', null=True, blank=True)
 
     class Meta:
