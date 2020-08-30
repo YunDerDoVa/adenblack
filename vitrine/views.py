@@ -10,7 +10,7 @@ def get_sql(request):
 
 def home(request):
 
-    mad_mirror = Movie.objects.get(code='mad_mirror')
+    mad_mirror = Movie.objects.filter(code='mad_mirror').first()
 
     context = {
         'today': date.today(),
