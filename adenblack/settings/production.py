@@ -27,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
+    '157.230.107.103',
+    'adenblack.fr',
 ]
 
 
@@ -125,3 +127,17 @@ STATIC_ROOT = 'staticfiles'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
+
+# Sentry
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+sentry_sdk.init(
+    dsn="https://3a79ebeb294a426993409e4f3942bef6@o419717.ingest.sentry.io/5410996",
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=1.0,
+
+    # If you wish to associate users to errors (assuming you are using
+    # django.contrib.auth) you may enable sending PII data.
+    send_default_pii=True
+)
