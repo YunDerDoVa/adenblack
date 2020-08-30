@@ -29,6 +29,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '157.230.107.103',
     'adenblack.fr',
+    'www.adenblack.fr',
+    '185.98.131.229',
 ]
 
 
