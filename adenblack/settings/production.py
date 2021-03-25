@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', '@cjt(uj16%vit@&c4b!s&4hhhmk3e)j--#o6e#*^$-%!z*=qmg')
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', None)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -135,7 +135,7 @@ import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
 sentry_sdk.init(
-    dsn="https://3a79ebeb294a426993409e4f3942bef6@o419717.ingest.sentry.io/5410996",
+    dsn=os.getenv('SENTRY_DSN', None),
     integrations=[DjangoIntegration()],
     traces_sample_rate=1.0,
 
