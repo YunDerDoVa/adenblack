@@ -9,6 +9,8 @@ class Video(models.Model):
     video = models.FileField(upload_to='videos/', null=True, blank=True)
     poster = models.ImageField(upload_to='video/posters/', null=True, blank=True)
 
+    youtube_api = models.CharField(max_length=32, null=True, blank=True)
+
     class Meta:
         abstract = True
 

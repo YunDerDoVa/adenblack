@@ -1,0 +1,6 @@
+{% load static %}
+
+<iframe class="aden-movie-fullscreen"
+        src="https://www.youtube.com/embed/{{ movie.youtube_api }}"
+        width="100vw" height="100vh" frameborder="0" type="text/html">
+</iframe>

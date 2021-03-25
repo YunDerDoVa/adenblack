@@ -6,6 +6,6 @@
 
   {% include "vitrine/components/btn_return.html.django" %}
 
-  {% include "vitrine/components/fullscreen_window.html.django" %}
+  {% include "vitrine/components/yt_fullscreen_window.html.django" %}
 
 {% endblock %}
