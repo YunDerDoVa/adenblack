@@ -9,3 +9,7 @@
   {% include "vitrine/components/yt_fullscreen_window.html.django" %}
 
 {% endblock %}
+
+{% block javascripts %}
+  {% include "vitrine/api/youtube_api.html.django" %}
+{% endblock javascripts %}

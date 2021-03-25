@@ -17,5 +17,6 @@
 {% endblock %}
 
 {% block javascripts %}
+  {% include "vitrine/api/youtube_api.html.django" %}
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.2/dist/lazyload.min.js"></script>
 {% endblock javascripts %}

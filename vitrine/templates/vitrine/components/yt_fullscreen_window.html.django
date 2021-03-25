@@ -1,6 +1,7 @@
 {% load static %}
 
-<iframe class="aden-movie-fullscreen"
-        src="https://www.youtube.com/embed/{{ movie.youtube_api }}"
-        width="100vw" height="100vh" frameborder="0" type="text/html">
-</iframe>
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+<div id="player_{{ video.id }}" class="yt-player aden-movie-fullscreen"
+      width="100vw" height="100vh"
+      data-videoId="{{ movie.youtube_api }}">
+</div>
